@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get("/", function (req, res) {
   let result = emailCheck(req.body);
-  res.send(`Here is your result ${result}`);
+  res.send(`Your result is : ${result}`);
 });
 
 const emailCleaner = (email) => {
